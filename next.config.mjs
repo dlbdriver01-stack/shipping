@@ -20,8 +20,7 @@ const nextConfig = {
   },
   // Production build optimizations
   productionBrowserSourceMaps: false,
-  // Standalone output for better deployment
-  output: 'standalone',
+  // Note: output: 'standalone' removed - conflicts with Netlify's Next.js plugin
   // Experimental features for better performance
   experimental: {
     optimizePackageImports: ['lucide-react', 'framer-motion'],

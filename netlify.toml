@@ -7,13 +7,8 @@
   NODE_VERSION = "20"
   NEXT_USE_NETLIFY_EDGE = "true"
   NEXT_PUBLIC_SITE_URL = "https://assampackersandmovers.com"
-  # Firebase Client Configuration
-  NEXT_PUBLIC_FIREBASE_API_KEY = "AIzaSyDajV5wccgisp2gFmP6rKOfuanQNqc88Mc"
-  NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN = "shiptrak-in.firebaseapp.com"
-  NEXT_PUBLIC_FIREBASE_PROJECT_ID = "shiptrak-in"
-  NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET = "shiptrak-in.firebasestorage.app"
-  NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID = "1078905976057"
-  NEXT_PUBLIC_FIREBASE_APP_ID = "1:1078905976057:web:668a31ea4d8605af7ade28"
+  # Firebase environment variables are set in Netlify Dashboard
+  # This prevents conflicts and ensures Dashboard values take precedence
 
 [functions]
   node_bundler = "esbuild"
@@ -23,17 +18,8 @@
 
 [context.production.environment]
   NEXT_PUBLIC_SITE_URL = "https://assampackersandmovers.com"
-  # Firebase Client Configuration (Production)
-  NEXT_PUBLIC_FIREBASE_API_KEY = "AIzaSyDajV5wccgisp2gFmP6rKOfuanQNqc88Mc"
-  NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN = "shiptrak-in.firebaseapp.com"
-  NEXT_PUBLIC_FIREBASE_PROJECT_ID = "shiptrak-in"
-  NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET = "shiptrak-in.firebasestorage.app"
-  NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID = "1078905976057"
-  NEXT_PUBLIC_FIREBASE_APP_ID = "1:1078905976057:web:668a31ea4d8605af7ade28"
-  # Firebase Admin Service Account Key (SECRET - set in Netlify Dashboard)
-  # IMPORTANT: This secret cannot be committed to GitHub for security reasons
-  # Set it in Netlify Dashboard: Site settings → Environment variables → Add FIREBASE_SERVICE_ACCOUNT_KEY
-  # Value: Copy the entire JSON from serviceAccountKey.json as a single-line string
+  # Firebase environment variables are set in Netlify Dashboard
+  # This prevents conflicts and ensures Dashboard values take precedence
 
 # Security & caching headers
 [[headers]]
